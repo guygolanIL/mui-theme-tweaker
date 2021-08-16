@@ -1,10 +1,8 @@
 import React from 'react'
 
-import { ExampleComponent } from 'mui-theme-tweaker'
-import 'mui-theme-tweaker/dist/index.css'
-
+import {MuiTweaker} from 'mui-theme-tweaker'; 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <MuiTweaker/>
 }
 
 export default App
