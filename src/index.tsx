@@ -7,10 +7,12 @@ import {
   Drawer
 } from '@material-ui/core'
 import React, { useMemo, useState } from 'react'
-import { useThemeTweaker, ObjectMapper } from 'theme-tweaker'
+import * as ThemeTweaker from 'theme-tweaker'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 // eslint-disable-next-line no-unused-vars
 import { makeStyles, Theme } from '@material-ui/core/styles'
+
+const { ObjectMapper, useThemeTweaker } = ThemeTweaker
 
 const useStyles = makeStyles(() => ({
   MuiTweakerButton: {
@@ -191,3 +193,5 @@ export function MuiTweaker() {
     </div>
   )
 }
+
+export const createThemeTweaker = ThemeTweaker.createThemeTweaker
