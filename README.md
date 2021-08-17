@@ -1,6 +1,6 @@
 # mui-theme-tweaker
 
-> Made with create-react-library
+> A Theme Tweaker wrapper for Material UI
 
 [![NPM](https://img.shields.io/npm/v/mui-theme-tweaker.svg)](https://www.npmjs.com/package/mui-theme-tweaker) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,17 +13,18 @@ npm install --save mui-theme-tweaker
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'mui-theme-tweaker'
-import 'mui-theme-tweaker/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+import {MuiTweaker} from 'mui-theme-tweaker';
+const App = () => {
+  return <MuiTweaker/>
 }
+
+export default App
 ```
+
+###
+Relying on React 16 and above
 
 ## License
 
