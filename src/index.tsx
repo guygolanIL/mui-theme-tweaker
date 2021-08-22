@@ -176,7 +176,10 @@ export function MuiTweaker() {
           <Button variant='outlined' onClick={() => setAnchor('right')}>
             Right
           </Button>
-          <IconButton className={classes.closeButton}>
+          <IconButton
+            onClick={() => setTweakerPanelOpened(false)}
+            className={classes.closeButton}
+          >
             <CloseIcon />
           </IconButton>
         </div>
