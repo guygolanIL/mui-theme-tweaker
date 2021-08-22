@@ -14,11 +14,12 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const { ObjectMapper, useThemeTweaker } = ThemeTweaker
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   MuiTweakerButton: {
     position: 'fixed',
     left: 15,
-    bottom: 15
+    bottom: 15,
+    zIndex: theme.zIndex.snackbar
   },
   anchorButtonList: {
     display: 'flex',
