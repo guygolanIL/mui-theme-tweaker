@@ -4,8 +4,10 @@ import {
   AccordionSummary,
   Button,
   Chip,
-  Drawer
+  Drawer,
+  IconButton
 } from '@material-ui/core'
+import CloseIcon from '@material-ui/icons/CloseOutlined'
 import React, { useMemo, useState } from 'react'
 import * as ThemeTweaker from 'theme-tweaker'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
@@ -37,6 +39,11 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     flexWrap: 'wrap',
     justifyContent: 'center'
+  },
+  closeButton: {
+    position: 'absolute',
+    right: 5,
+    top: 5
   }
 }))
 
@@ -169,6 +176,9 @@ export function MuiTweaker() {
           <Button variant='outlined' onClick={() => setAnchor('right')}>
             Right
           </Button>
+          <IconButton className={classes.closeButton}>
+            <CloseIcon />
+          </IconButton>
         </div>
         <div className={classes.chipsGroupRow}>
           <div className={classes.chipsGroup}>
